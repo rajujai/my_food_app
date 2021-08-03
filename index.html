@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | My Food App</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="topbar"></div>
+    <div id="content"></div>
+</body>
+</html>
+<script type="module">
+import navbar from "./components/navbar.js";
+const topbar = document.getElementById("topbar");
+topbar.innerHTML = navbar();
+import searchbox from "./components/searchbox.js"
+const content = document.getElementById("content");
+content.innerHTML = searchbox();
+
+
+</script>
